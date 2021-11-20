@@ -26,3 +26,8 @@ function verificarCamposVazios(){
     }
 
 }
+
+function voltarPrincipal(){
+    document.location.href = "..\Assets\index.html";
+
+}
