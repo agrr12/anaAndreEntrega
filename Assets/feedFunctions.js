@@ -15,13 +15,13 @@ var lista = [
         "id":2,
         "header": "René Descartes",
         "imagem": "https://static.todamateria.com.br/upload/de/sc/descartes3.gif",
-        "nacionalidade": "Paris, França",
+        "cidade": "Paris, França"
     },
     {
         "id":3,
         "header": "John Rawls",
         "imagem": "https://ideiasradicais.com.br/wp-content/uploads/2020/08/rawls-2.jpg",
-        "cidade": "San Diego, EUA",
+        "cidade": "Baltimore, EUA",
     },
     {
         "id":4,
@@ -35,12 +35,14 @@ var lista = [
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/2/23/Simone_Weil_04_%28cropped%29.png",
         "cidade": "Paris, França",
     }
+
+
+    
 ];
 
 
 function montarCard(){
     var conteudo = '';
-    console.log(document.getElementById("divFilmes").innerHTML);
     lista.forEach((item) => {
         conteudo +='<div class="card">';
         conteudo +=`<div class="header">${item.header}</div>`;
@@ -52,12 +54,8 @@ function montarCard(){
         conteudo +='<Button class="botaoCard">Ver perfil</Button>';
         conteudo +='</div>';
         conteudo +='</div>';
-
-        if(item.status== false){
-            
-        }
     });
-    document.getElementById("divFilmes").innerHTML += conteudo;
+    document.getElementById("divPessoas").innerHTML += conteudo;
 }
 
 window.onload = montarCard();
