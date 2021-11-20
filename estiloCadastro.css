@@ -1,0 +1,78 @@
+:root {
+    --cFundo: #fff;
+
+    --bLogin: #1877f2;
+
+    --bLoginHover: #65a4f5;
+
+    --bCadastro: #088a68;
+
+    --bCadastroHover: #04B486;
+
+    --errorInput: rgb(172, 54, 54);
+}
+
+body{
+    background-color: var(--cFundo);
+}
+
+.janelaCadastro{
+    position:absolute;
+    right:25%;
+    bottom: 25%;
+    border: solid 10px #1877f2;
+    text-align: center;
+    background-color: var(--cFundo);
+}
+
+button:hover{
+    background-color: #65a4f5;
+    cursor: pointer;
+}
+
+table{
+    padding: 10px;
+}
+
+td{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.campoNome{
+    color:#1877f2;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    border: solid 2px #1877f2;
+    font-size: 15px;
+}
+
+
+a{
+    margin-bottom: 20px;
+}
+
+.bVoltar{
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: var(--bCadastro);
+}
+.bVoltar:hover{
+    background-color: var(--bCadastroHover);
+}
+.bCadastrar{
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--bLogin);
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+}
