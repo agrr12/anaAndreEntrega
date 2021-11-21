@@ -28,6 +28,5 @@ function verificarCamposVazios(){
 }
 
 function voltarPrincipal(){
-    document.location.href = "..\Assets\index.html";
-
+    document.location.href = "../index.html";
 }
