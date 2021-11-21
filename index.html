@@ -1,0 +1,61 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="https://icon-library.com/images/system-icon-png/system-icon-png-17.jpg">
+    <link rel="stylesheet" href="Assets/style/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="Assets/style/styleLogin.css">  
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Assets/js/scriptLogin.js" defer></script>
+    <title>Autenticação</title>
+</head>
+<body>
+    <div class="MainContainer">
+        <div class="LoginItems"> 
+            <h1>Login</h1>     
+        </div>
+        
+        <div class="LoginItems">
+            <span>Campos obrigatórios </span><span class="fieldRequired">*</span>
+        </div>
+
+        <div class="LoginItems">
+            <i class="fas fa-envelope"></i>
+            <input type="email" class="inputLogin" id="email" placeholder="Email" onblur="validacaoEmail()">
+            <span class="fieldRequired">*</span>
+        </div>
+
+        <div class="LoginItems">
+            <span class="fieldErrorText" id="emailError">Formato de email incorreto!</span>
+        </div>
+
+        <div class="LoginItems">
+            <i class="fas fa-lock"></i>
+            <input type="password" class="inputLogin" id="senha" placeholder="Senha" onblur="validacaoSenha()">
+            <span class="fieldRequired">*</span>
+        </div>
+
+        <div class="LoginItems">
+            <span class="fieldErrorText" id="senhaError">A senha não pode estar vazia!</span>
+        </div>
+
+        <div class="LoginItems">
+            <span class="fieldErrorText">Senha incorreto!</span>
+        </div>
+
+        <div class="LoginItems">
+            <button class="openLogin" onclick="validarDados()">Entrar</button>
+        </div>
+
+        <div class="LoginItems">
+            <span>Ainda não tem uma conta?</span> 
+        </div>
+
+        <div class="LoginItems">
+            <span class="bCursor" onclick="location.href='Assets/cadastro.html'">Cadastre-se aqui! </span> 
+            <i class="fas fa-arrow-circle-right bCursor" onclick="location.href='Assets/cadastro.html'"></i>
+        </div>
+    </div>
+</body>
+</html>

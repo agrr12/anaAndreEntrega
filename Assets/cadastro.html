@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloCadastro.css">
+    <script type = "text/javascript" src = "cadastroFunctions.js" defer></script>
+
+
+    <title>Cadastrar</title>
+</head>
+<body>
+
+    <div class="janelaCadastro">
+        <table>
+            <th colspan="2">Cadastrar Novo Usuário</th>
+            <tr>
+                <td class="campoNome">Nome</td>
+                <td><input id="nome" class="inputs" type="text" placeholder="Nome"></td>
+            </tr>
+            <tr>
+                <td class="campoNome">Sobrenome</td>
+                <td><input id="sobrenome" class="inputs" type="password"placeholder="Sobrenome"></td>
+            </tr>
+            <tr>
+                <td class="campoNome">Nome de Usuário</td>
+                <td><input id="login" class="inputs" type="text" placeholder="Login"></td>
+            </tr>
+            <tr>
+                <td class="campoNome">Senha</td>
+                <td><input id="senha" class="inputs" type="password" placeholder="Senha"></td>
+            </tr>
+            <tr>
+                <td class="campoNome">Confirmar Senha</td>
+                <td><input id="senhaConfirmar" class="inputs" type="password" placeholder="Confirme a Senha"></td>
+            </tr>
+            <tr>
+                <td class="campoNome">Email</td>
+                <td><input id="email" class="inputs" type="email" placeholder="Email"></td>
+            </tr>
+        </table>
+        <div class="divErro" id="divErro">*Preencha os dados corretamente</div>
+        <button class="bVoltar" onclick="voltarPrincipal()">Voltar</button>
+        <button class="bCadastrar" onclick="verificarCamposVazios()">Cadastrar</button> 
+
+    </div>
+    
+</body>
+</html>
