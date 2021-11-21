@@ -28,3 +28,29 @@ function validacaoSenha() {
         document.getElementById("senhaError").style.display = "none";
     }
 }
+
+function validarDados() {
+    if((document.getElementById("email").value.length  < 1)  || (document.getElementById("senha").value.length < 1)) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Falha ao logar!',
+            text: 'Por favor, preencha todos os campos obrigatórios.',
+        })
+    } else if (document.getElementById("email").classList.contains("fieldError")) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Falha ao logar!',
+            text: 'Por favor, coloque um email válido.',
+        })
+    } else {
+        Swal.fire({
+            icon: 'success',
+            title: 'Sucesso ao logar!',
+            text: 'Você será redirecionado para o feed.',
+        })
+
+        setTimeout(function() {
+            window.location.href = "Assets/feed.html";
+        }, 2000);
+    }
+}
